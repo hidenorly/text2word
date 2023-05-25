@@ -49,4 +49,6 @@ for aLine in result:
 
 # Output
 for aLine in result2:
-    print(aLine)
+    aLine = aLine.encode('utf-8', 'ignore').decode('utf-8')
+    if aLine:
+        print(aLine)
